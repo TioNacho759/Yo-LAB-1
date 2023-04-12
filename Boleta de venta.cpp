@@ -8,24 +8,27 @@ int main(){
 	cin>>pb;
 	cout<<"Ingrese peso de producto c: ";
 	cin>>pc;
-
 	a  = 4;
 	PA = a * pa;
 	b  = 6;
-	PB = b * pb;
+	PB = pb * b;
 	c  = 2;
 	PC = c * pc;
 	PT = PA + PB + PC;
-	IGV = 18/100;
+	IGV = 0.18;
 	IGV = PT*IGV;
-	PT = PT - IGV; 
-	cout<<"Boleta de venta"<<endl;
-	cout<<"Franquicia de Minimarkets MASS"<<endl;
-	cout<<"Producto      Cantidad      Precio"<<endl;
-	cout<<"a             "<<pa<<"KG           "<<PA<<endl;  
-	cout<<"b             "<<pb<<"KG           "<<PC<<endl;
-	cout<<"c             "<<pc<<"KG           "<<PC<<endl;
-    cout<<"               IGV           " <<PT<<endl;     
+	PT = PT+IGV;
+	cout<<"{----------------------------------------------------------}"<<endl;
+	cout<<"{--------------------Boleta de venta-----------------------}"<<endl;
+	cout<<"{------------Franquicia de Minimarkets MASS----------------}"<<endl;
+	cout<<"{Producto       Precio x Unit         Cantidad      Precio}"<<endl;
+	cout<<"{a              "<<a<<"                     "<<pa<<"KG           }"<<PA<<endl;  
+	cout<<"{b              "<<b<<"                     "<<pb<<"KG           }"<<PB<<endl;
+	cout<<"{c              "<<c<<"                     "<<pc<<"KG           }"<<PC<<endl;
+	cout<<"{IGV                                                }"<<IGV<<endl;
+    cout<<"{TOTAL:                                             }"<<PT<<endl;   
+    cout<<"-----------------------------------------------------------"<<endl;
+    cout<<"                Gracias por su Preferencia                 ";
 return 0;
 }
 	
